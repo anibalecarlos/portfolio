@@ -13,8 +13,10 @@
 <body>
 <header>
   <a class="logo" href="index.html" aria-label="Carlos Anibale, início"><img src="assets/img/icon.svg" alt="" width="24" height="24"><span>carlos anibale</span></a>
-  <nav aria-label="Principal">
+  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Principal">
     <ul>
+      <li><a href="index.html">Início</a></li>
       <li><a href="projetos.html" aria-current="page">Projetos</a></li>
       <li><a href="index.html#servicos">Serviços</a></li>
       <li><a href="index.html#conteudo">Conteúdo</a></li>
@@ -28,25 +30,21 @@
   <p class="page-intro">Vídeos, animações e conteúdo que fiz para marcas e produtos digitais. Passe o mouse sobre um projeto para ver o vídeo.</p>
   <section class="page-body">
     <div class="grid">
-      <a class="card" href="db1.html">
+      <a class="card wide" href="db1.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/db1.mp4"></video>
         <span class="info"><small>2025 – 2026</small><strong>DB1 Group</strong><span class="tipo">Vídeos institucionais e eventos internos</span></span>
-      </a>
-      <a class="card" href="anymarket.html">
-        <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/anymarket.mp4"></video>
-        <span class="info"><small>2025 – 2026</small><strong>Anymarket</strong><span class="tipo">Vídeos institucionais, YouTube e mídia paga</span></span>
       </a>
       <a class="card" href="anytools.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/anytools.mp4"></video>
         <span class="info"><small>2025 – 2026</small><strong>ANYTOOLS</strong><span class="tipo">Case de sucesso e presença em evento</span></span>
       </a>
-      <a class="card" href="piso-de-ventas.html">
+      <a class="card" href="anymarket.html">
+        <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/anymarket.mp4"></video>
+        <span class="info"><small>2025 – 2026</small><strong>Anymarket</strong><span class="tipo">Vídeos institucionais, YouTube e mídia paga</span></span>
+      </a>
+      <a class="card wide" href="piso-de-ventas.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/piso-de-ventas.mp4"></video>
         <span class="info"><small>2026</small><strong>Piso de Ventas</strong><span class="tipo">Podcast sobre e-commerce e marketplaces</span></span>
-      </a>
-      <a class="card" href="nomad.html">
-        <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/nomad.mp4"></video>
-        <span class="info"><small>2023 – 2025</small><strong>Nomad</strong><span class="tipo">Vídeo e motion para produto e marca</span></span>
       </a>
       <a class="card" href="husky.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/husky.mp4"></video>
@@ -55,6 +53,10 @@
       <a class="card" href="aiqfome.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/aiqfome.mp4"></video>
         <span class="info"><small>2020 – 2023</small><strong>aiqfome</strong><span class="tipo">Social media e videomaker</span></span>
+      </a>
+      <a class="card wide" href="nomad.html">
+        <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/nomad.mp4"></video>
+        <span class="info"><small>2023 – 2025</small><strong>Nomad</strong><span class="tipo">Vídeo e motion para produto e marca</span></span>
       </a>
     </div>
   </section>

@@ -13,8 +13,10 @@
 <body>
 <header>
   <a class="logo" href="index.html" aria-label="Carlos Anibale, início"><img src="assets/img/icon.svg" alt="" width="24" height="24"><span>carlos anibale</span></a>
-  <nav aria-label="Principal">
+  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Principal">
     <ul>
+      <li><a href="index.html">Início</a></li>
       <li><a href="projetos.html">Projetos</a></li>
       <li><a href="index.html#servicos">Serviços</a></li>
       <li><a href="index.html#conteudo">Conteúdo</a></li>
@@ -60,7 +62,7 @@
           <div class="role"><strong>Auxiliar de Marketing</strong><small>Abril de 2017 – setembro de 2019</small><p>Design gráfico e atendimento online.</p></div>
         </article>
         </div>
-        <button type="button" class="btn toggle" aria-expanded="false" aria-controls="exp-mais">Ver mais</button>
+        <div class="toggle-row"><button type="button" class="btn toggle" aria-expanded="false" aria-controls="exp-mais">Ver mais</button></div>
     </div>
   </section>
 

@@ -27,3 +27,18 @@ document.querySelectorAll('.toggle').forEach(b=>{
     b.textContent=aberto?'Ver mais':'Ver menos';
   });
 });
+// Menu hambúrguer: abre e fecha o menu em telas estreitas
+(function(){
+  const header=document.querySelector('header');
+  const btn=header&&header.querySelector('.menu-btn');
+  if(!btn) return;
+  const definir=(aberto)=>{
+    header.classList.toggle('open',aberto);
+    btn.setAttribute('aria-expanded',String(aberto));
+    btn.setAttribute('aria-label',aberto?'Fechar menu':'Abrir menu');
+  };
+  btn.addEventListener('click',()=>definir(!header.classList.contains('open')));
+  header.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>definir(false)));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') definir(false); });
+  matchMedia('(min-width:821px)').addEventListener('change',e=>{ if(e.matches) definir(false); });
+})();

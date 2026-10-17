@@ -160,3 +160,11 @@ nav a[aria-current="page"]{color:var(--ink)}
 .more-jobs[hidden]{display:none}
 button.btn{background:none;color:var(--ink);font:inherit;font-weight:500;cursor:pointer}
 .toggle{justify-self:start}
+
+/* vídeos horizontais em tabela 2x2 */
+.vids.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:640px){.vids.grid2{grid-template-columns:1fr}}
+
+/* logo: ícone proporcional ao texto */
+.logo{display:inline-flex;align-items:center;gap:.4em}
+.logo img{height:1.15em;width:auto}

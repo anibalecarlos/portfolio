@@ -10,8 +10,11 @@
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css?v=20261018">
+<script>try{if(!sessionStorage.getItem("pl-seen")){document.documentElement.classList.add("pl-on");setTimeout(function(){document.documentElement.classList.remove("pl-on")},9500)}}catch(e){}</script>
 </head>
 <body>
+<div class="preloader" aria-hidden="true"><div class="pl-fill"></div><div class="pl-count"><span class="pl-num">0</span><span class="pl-pct">%</span></div></div>
+
 <header>
   <a class="logo" href="index.html" aria-label="Carlos Anibale, início"><img src="assets/img/icon.svg" alt="" width="24" height="24"><span>carlos anibale</span></a>
   <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
@@ -72,6 +75,7 @@
     <span>Carlos Anibale, 2026</span>
   </div>
 </footer>
+<script src="assets/preloader.js" defer></script>
 <script src="assets/main.js" defer></script>
 </body>
 </html>

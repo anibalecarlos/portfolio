@@ -297,3 +297,12 @@ html{scroll-padding-top:64px}
 footer,footer h2,footer .btn,footer .foot-links,footer .foot-links a,footer .foot-links span{color:#110702}
 footer .btn{border-color:#110702}
 footer .btn:hover{background:#110702;color:#FF4802}
+
+/* ===== preloader ===== */
+.preloader{display:none}
+html.pl-on{overflow:hidden;scrollbar-gutter:stable}
+html.pl-on .preloader{display:block;position:fixed;inset:0;z-index:9999;background:#110702;overflow:hidden;transition:transform .9s cubic-bezier(.76,0,.24,1)}
+.preloader.pl-exit{transform:translateY(-100%)}
+.pl-fill{position:absolute;inset:0;background:#FF4802;transform:scaleY(0);transform-origin:bottom}
+.pl-count{position:absolute;left:var(--gutter);bottom:clamp(20px,4vw,48px);display:flex;align-items:flex-start;gap:.06em;color:#FFF4EE;font:900 clamp(96px,22vw,320px)/.8 var(--display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pl-pct{font-size:.32em;line-height:1;margin-top:.12em}

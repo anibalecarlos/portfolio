@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carlos Anibale — Edição de vídeo e motion design</title>
 <meta name="description" content="Editor de vídeo e motion designer em Maringá. Vídeos e animações para produtos digitais, redes sociais e marcas.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261018">
 </head>
 <body>
 
@@ -50,15 +51,15 @@
     <div class="grid">
       <a class="card" href="piso-de-ventas.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/piso-de-ventas.mp4"></video>
-        <span class="info"><small>2026</small><strong>Piso de Ventas</strong><span class="tipo">Podcast sobre e-commerce e marketplaces</span></span>
+        <span class="info"><small>2026</small><strong>Piso de Ventas</strong><span class="tipo"><span class="clip"><span class="txt">Podcast sobre e-commerce e marketplaces</span></span></span></span>
       </a>
       <a class="card" href="db1.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/db1.mp4"></video>
-        <span class="info"><small>2025 – 2026</small><strong>DB1 Group</strong><span class="tipo">Vídeos institucionais e eventos internos</span></span>
+        <span class="info"><small>2025 – 2026</small><strong>DB1 Group</strong><span class="tipo"><span class="clip"><span class="txt">Vídeos institucionais e eventos internos</span></span></span></span>
       </a>
       <a class="card" href="nomad.html">
         <video muted loop playsinline preload="none" aria-hidden="true" data-src="assets/previews/nomad.mp4"></video>
-        <span class="info"><small>2023 – 2025</small><strong>Nomad</strong><span class="tipo">Vídeo e motion para produto e marca</span></span>
+        <span class="info"><small>2023 – 2025</small><strong>Nomad</strong><span class="tipo"><span class="clip"><span class="txt">Vídeo e motion para produto e marca</span></span></span></span>
       </a>
       <a class="card card-all" href="projetos.html"><strong>Ver todos os projetos</strong></a>
     </div>
@@ -66,31 +67,19 @@
 
   <section id="servicos">
     <h2>O que eu faço</h2>
-    <div class="serv">
-      <article class="svc">
-        <h3><button type="button" class="svc-btn" aria-expanded="false" aria-controls="svc-1">
-          <span class="svc-row"><span class="svc-title">Edição de vídeo</span><span class="svc-plus" aria-hidden="true"></span></span>
-        </button></h3>
-        <div class="svc-body" id="svc-1" hidden>
-          <p>Cortes precisos, ritmo, transições e correção de cor para organizar o material gravado em uma história que prende a atenção.</p>
-        </div>
-      </article>
-      <article class="svc">
-        <h3><button type="button" class="svc-btn" aria-expanded="false" aria-controls="svc-2">
-          <span class="svc-row"><span class="svc-title">Motion design</span><span class="svc-plus" aria-hidden="true"></span></span>
-        </button></h3>
-        <div class="svc-body" id="svc-2" hidden>
-          <p>Textos, gráficos e transições animados que destacam o que importa e dão ao vídeo uma identidade visual própria.</p>
-        </div>
-      </article>
-      <article class="svc">
-        <h3><button type="button" class="svc-btn" aria-expanded="false" aria-controls="svc-3">
-          <span class="svc-row"><span class="svc-title">Animação 2D</span><span class="svc-plus" aria-hidden="true"></span></span>
-        </button></h3>
-        <div class="svc-body" id="svc-3" hidden>
-          <p>Personagens e cenas animadas para explicar produtos, apresentar marcas e contar histórias.</p>
-        </div>
-      </article>
+    <div class="grid serv-grid">
+      <div class="card" tabindex="0">
+        <img src="assets/img/edicao-de-video.webp" alt="" loading="lazy" decoding="async">
+        <span class="info"><strong>Edição de vídeo</strong><span class="tipo"><span class="clip"><span class="txt">Cortes precisos, ritmo, transições e correção de cor para organizar o material gravado em uma história que prende a atenção.</span></span></span></span>
+      </div>
+      <div class="card" tabindex="0">
+        <img src="assets/img/motion-design.webp" alt="" loading="lazy" decoding="async">
+        <span class="info"><strong>Motion design</strong><span class="tipo"><span class="clip"><span class="txt">Textos, gráficos e transições animados que destacam o que importa e dão ao vídeo uma identidade visual própria.</span></span></span></span>
+      </div>
+      <div class="card" tabindex="0">
+        <img src="assets/img/animacao-2d.webp" alt="" loading="lazy" decoding="async">
+        <span class="info"><strong>Animação 2D</strong><span class="tipo"><span class="clip"><span class="txt">Personagens e cenas animadas para explicar produtos, apresentar marcas e contar histórias.</span></span></span></span>
+      </div>
     </div>
   </section>
 

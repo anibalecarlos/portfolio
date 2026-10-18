@@ -42,3 +42,12 @@ document.querySelectorAll('.toggle').forEach(b=>{
   addEventListener('keydown',e=>{ if(e.key==='Escape') definir(false); });
   matchMedia('(min-width:821px)').addEventListener('change',e=>{ if(e.matches) definir(false); });
 })();
+// Boxes de serviços: clique abre e fecha o texto de cada um
+document.querySelectorAll('.svc-btn').forEach(b=>{
+  const alvo=document.getElementById(b.getAttribute('aria-controls'));
+  b.addEventListener('click',()=>{
+    const aberto=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!aberto));
+    alvo.hidden=aberto;
+  });
+});

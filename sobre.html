@@ -2,112 +2,121 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sobre — Carlos Anibale</title>
-<meta name="description" content="Carlos Anibale, videomaker brasileiro especializado em motion design. Experiência, formação e qualificações.">
+<title>Sobre · Carlos Anibale</title>
+<meta name="description" content="Carlos Anibale, videomaker brasileiro especializado em motion design. Experiência, formação e cursos.">
+<link rel="alternate" hreflang="pt-BR" href="sobre.html">
+<link rel="alternate" hreflang="en" href="en/sobre.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261018">
-<script>try{if(!sessionStorage.getItem("pl-seen")){document.documentElement.classList.add("pl-on");setTimeout(function(){document.documentElement.classList.remove("pl-on")},9500)}}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css?v=20261124">
+<script>try{if(!sessionStorage.getItem("intro-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-on")}catch(e){}</script>
 </head>
 <body>
-<div class="preloader" aria-hidden="true"><div class="pl-fill"></div><div class="pl-count"><span class="pl-num">0</span><span class="pl-pct">%</span></div></div>
 
-<header>
+<!-- ABERTURA ANIMADA: a mesma da home, uma vez por sessão -->
+<div class="intro-screen" aria-hidden="true">
+  <div class="lockup">
+    <svg class="roll" viewBox="0 0 501 501" width="72" height="72"><g fill="currentColor"><path d="M125.039 33.5417C5.4711 102.575 -35.4997 255.48 33.5331 375.048C102.566 494.616 255.471 535.587 375.039 466.554C494.608 397.522 535.579 244.616 466.546 125.048C397.536 5.46659 244.631 -35.5042 125.039 33.5417ZM433.251 144.271C491.671 245.456 457.002 374.84 355.817 433.26C254.631 491.679 125.247 457.011 66.8277 355.825C8.43106 254.627 43.0898 125.279 144.275 66.8592C245.461 8.43972 374.845 43.1081 433.264 144.294L433.251 144.271Z"/><path d="M140.253 357.857C188.258 406.778 264.948 419.104 327.038 383.256C389.129 347.408 416.799 274.83 398.435 208.795C395.031 196.572 390.045 184.561 383.401 173.052L116.815 326.965C123.46 338.474 131.356 348.774 140.253 357.857ZM355.412 233.634C367.67 277.649 349.204 326.035 307.802 349.938C266.401 373.841 215.274 365.604 183.276 333.017L355.412 233.634Z"/><path d="M221.18 222.317L87.7977 186.578L77.847 223.714L121.539 235.422L78.3568 260.353L97.5927 293.67L221.18 222.317Z"/><path d="M313.467 87.679L276.33 77.7283L240.591 211.111L364.178 139.757L344.942 106.44L301.76 131.371L313.467 87.679Z"/></g></svg>
+    <span class="name">carlos anibale</span>
+  </div>
+</div>
+<header class="top">
   <a class="logo" href="index.html" aria-label="Carlos Anibale, início"><img src="assets/img/icon.svg" alt="" width="24" height="24"><span>carlos anibale</span></a>
-  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   <nav id="menu" aria-label="Principal">
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="projetos.html">Projetos</a></li>
-      <li><a href="index.html#servicos">Serviços</a></li>
-      <li><a href="index.html#conteudo">Conteúdo</a></li>
-      <li><a href="sobre.html" aria-current="page">Sobre</a></li>
-      <li><a href="#contato" class="nav-cta">Contato</a></li>
-    </ul>
+    <a href="projetos.html">Projetos</a>
+    <a href="index.html#servicos">Serviços</a>
+    <a href="index.html#conteudo">Conteúdo</a>
+    <a href="sobre.html" aria-current="page">Sobre</a>
+    <a href="#contato" class="nav-cta">Contato</a>
   </nav>
+  <div class="lang" role="group" aria-label="Idioma">
+    <a class="flag" href="sobre.html" hreflang="pt-BR" lang="pt-BR" title="Português" aria-current="true"><img src="assets/img/flags/br.svg" alt="Português" width="24" height="24"></a>
+    <a class="flag" href="en/sobre.html" hreflang="en" lang="en" title="English"><img src="assets/img/flags/us.svg" alt="English" width="24" height="24"></a>
+  </div>
+<span class="scrub" aria-hidden="true"><span></span></span>
 </header>
 <main>
-  <section class="about">
+  <section class="about-hero">
+    <img src="assets/img/carlos-sobre.webp" alt="Foto de Carlos Anibale" width="460" height="460">
     <div>
-      <h1>Oi, eu sou<br>Carlos Anibale 👋</h1>
-      <p>Sou um videomaker brasileiro especializado em motion design.</p>
-      <p>Sou formado na área de comunicação, design e produção de vídeo.</p>
-      <p>Em 2019 completei meu bacharel em Jornalismo e Comunicação Social.</p>
-      <p>Tenho mais de 10 anos de experiência com edição de vídeo, motion graphics e animação 2D.</p>
-      <p>Trabalhei em empresas nacionais e internacionais, sempre com conteúdo para produtos digitais e redes sociais.</p>
-      <p>Atualmente meu workflow conta com os aplicativos do pacote Adobe: After Effects, Premiere Pro, Illustrator, Photoshop e Audition.</p>
-      <p>Por trabalhar muito com motion graphics e animação 2D de SaaS, também aplico o Figma com frequência no meu processo de desenvolvimento e edição.</p>
-      <p>Vamos juntos tirar essa ideia do papel?</p>
-      <div class="social">
-        <a href="https://www.instagram.com/anibalecarlos" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://wa.me/5544936189694" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.youtube.com/@anibalecarlos" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://www.linkedin.com/in/carlosanibale" target="_blank" rel="noopener">LinkedIn</a>
+      <h1>Carlos Anibale</h1>
+      <p class="lead">Videomaker especializado em motion design.</p>
+      <p>Sou formado em Jornalismo e Comunicação Social e trabalho há mais de 10 anos com edição de vídeo, motion graphics e animação 2D, em empresas nacionais e internacionais, sempre com conteúdo para produtos digitais e redes sociais.</p>
+      <p>Meu dia a dia é o pacote Adobe: After Effects, Premiere Pro, Illustrator, Photoshop e Audition. Como faço muito motion e animação 2D para SaaS, também uso o Figma com frequência no processo.</p>
+      <div class="links">
+        <a class="btn" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/carlosanibale" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
-    <img class="avatar" src="assets/img/carlos-sobre.webp" alt="Foto de Carlos Anibale" width="460" height="460">
   </section>
 
-  <section id="experiencia" class="cs">
-    <h2>Experiência</h2>
-    <div class="exp">
-        <article class="job"><h3>DB1 Group<small>atualmente</small></h3>
-          <div class="role"><strong>Designer Gráfico e Audiovisual</strong><small>Agosto de 2025 – atualmente</small><p>Planejamento, produção e edição de conteúdo audiovisual, criação de conteúdo estratégico, desenvolvimento e desdobramento de campanhas.</p></div>
-        </article>
-        <article class="job"><h3>Nomad<small>2 anos e 5 meses</small></h3>
-          <div class="role"><strong>Videomaker</strong><small>Outubro de 2023 – agosto de 2025</small><p>Edição, produção de conteúdo audiovisual e criação de conteúdo para todas as BUs da Nomad.</p></div>
-          <div class="role"><strong>Videomaker de International Payments</strong><small>Abril de 2023 – setembro de 2023</small><p>Edição e produção de conteúdo audiovisual, criação de conteúdo, desenvolvimento e desdobramento de campanhas para a BU de International Payments (Husky).</p></div>
-        </article>
-        <div class="more-jobs" id="exp-mais" hidden>
-        <article class="job"><h3>Aiqfome<small>2 anos e 6 meses</small></h3>
-          <div class="role"><strong>Videomaker</strong><small>Junho de 2021 – fevereiro de 2023</small><p>Edição e produção de conteúdo audiovisual, criação de conteúdo, desenvolvimento e desdobramento de campanhas.</p></div>
-          <div class="role"><strong>Analista de Mídias Sociais</strong><small>Setembro de 2020 – maio de 2021</small><p>Gestão de redes sociais (Instagram e Telegram), gestão e criação de conteúdo, prospecção e gestão de influencers digitais, design gráfico, edição de vídeos e atendimento online.</p></div>
-        </article>
-        <article class="job"><h3>Centro Universitário Unifamma<small>3 anos e 5 meses</small></h3>
-          <div class="role"><strong>Assistente de Marketing</strong><small>Outubro de 2019 – agosto de 2020</small><p>Design gráfico, gestão de redes sociais e site, gestão e criação de conteúdo, desenvolvimento e desdobramento de campanhas.</p></div>
-          <div class="role"><strong>Auxiliar de Marketing</strong><small>Abril de 2017 – setembro de 2019</small><p>Design gráfico e atendimento online.</p></div>
-        </article>
+  <section class="jobs" aria-labelledby="exp-t">
+    <h2 id="exp-t">Experiência</h2>
+    <article class="job">
+      <h3>DB1 Group<small>Desde agosto de 2025</small></h3>
+      <div>
+        <div class="role"><strong>Designer Gráfico e Audiovisual</strong><small>Agosto de 2025 até hoje</small><p>Planejamento, produção e edição de conteúdo audiovisual, criação de conteúdo estratégico, desenvolvimento e desdobramento de campanhas.</p></div>
+      </div>
+    </article>
+    <article class="job">
+      <h3>Nomad<small>2 anos e 5 meses</small></h3>
+      <div>
+        <div class="role"><strong>Videomaker</strong><small>Outubro de 2023 a agosto de 2025</small><p>Edição, produção de conteúdo audiovisual e criação de conteúdo para todas as BUs da Nomad.</p></div>
+        <div class="role"><strong>Videomaker de International Payments</strong><small>Abril a setembro de 2023</small><p>Edição e produção de conteúdo audiovisual, criação de conteúdo, desenvolvimento e desdobramento de campanhas para a BU de International Payments (Husky).</p></div>
+      </div>
+    </article>
+    <div class="more-jobs" id="exp-mais" hidden>
+      <article class="job">
+        <h3>aiqfome<small>2 anos e 6 meses</small></h3>
+        <div>
+          <div class="role"><strong>Videomaker</strong><small>Junho de 2021 a fevereiro de 2023</small><p>Edição e produção de conteúdo audiovisual, criação de conteúdo, desenvolvimento e desdobramento de campanhas.</p></div>
+          <div class="role"><strong>Analista de Mídias Sociais</strong><small>Setembro de 2020 a maio de 2021</small><p>Gestão de redes sociais (Instagram e Telegram), gestão e criação de conteúdo, prospecção e gestão de influenciadores digitais, design gráfico, edição de vídeos e atendimento online.</p></div>
         </div>
-        <div class="toggle-row"><button type="button" class="btn toggle" aria-expanded="false" aria-controls="exp-mais">Ver mais</button></div>
+      </article>
+      <article class="job">
+        <h3>Centro Universitário Unifamma<small>3 anos e 5 meses</small></h3>
+        <div>
+          <div class="role"><strong>Assistente de Marketing</strong><small>Outubro de 2019 a agosto de 2020</small><p>Design gráfico, gestão de redes sociais e site, gestão e criação de conteúdo, desenvolvimento e desdobramento de campanhas.</p></div>
+          <div class="role"><strong>Auxiliar de Marketing</strong><small>Abril de 2017 a setembro de 2019</small><p>Design gráfico e atendimento online.</p></div>
+        </div>
+      </article>
+    </div>
+    <div class="toggle-row"><button type="button" class="btn ghost toggle" aria-expanded="false" aria-controls="exp-mais" data-more="Ver experiências anteriores" data-less="Ver menos"><span class="toggle-txt">Ver experiências anteriores</span><span class="chev" aria-hidden="true"></span></button></div>
+  </section>
+
+  <section class="serv-like" aria-labelledby="form-t">
+    <h2 id="form-t">Formação e cursos</h2>
+    <div class="items">
+      <div class="item"><strong>Bacharelado em Jornalismo e Comunicação Social</strong><small>Centro Universitário Unifamma, 2019</small></div>
+      <div class="item"><strong>Motion Design</strong><small>Alura, 2023</small></div>
+      <div class="item"><strong>Adobe Illustrator: desenho vetorial</strong><small>Alura, 2023</small></div>
+      <div class="item"><strong>Adobe Photoshop: conceitos essenciais</strong><small>Alura, 2023</small></div>
+      <div class="item"><strong>Inbound Marketing</strong><small>Angelo Públio, Udemy, 2020</small></div>
+      <div class="item"><strong>Mídias Sociais e Relacionamento na Internet</strong><small>Sebrae PR, 2016</small></div>
     </div>
   </section>
 
-  <section id="formacao" class="cs">
-    <h2>Formação</h2>
-    <div class="exp">
-        <div class="role item"><strong>Motion Design</strong><small>Alura, 2023</small></div>
-        <div class="role item"><strong>Jornalismo e Comunicação Social — Bacharelado</strong><small>Centro Universitário Unifamma, 2019</small></div>
-    </div>
-  </section>
-
-  <section id="qualificacoes" class="cs">
-    <h2>Qualificações</h2>
-    <div class="exp">
-        <div class="role item"><strong>Adobe Illustrator: desenho vetorial</strong><small>Alura, 2023</small></div>
-        <div class="role item"><strong>Adobe Photoshop: conceitos essenciais</strong><small>Alura, 2023</small></div>
-        <div class="role item"><strong>Curso de Inbound Marketing</strong><small>Angelo Públio/Udemy, 2020</small></div>
-        <div class="role item"><strong>Curso de Mídias Sociais e Relacionamento na Internet</strong><small>Sebrae/PR, 2016</small></div>
-    </div>
-  </section>
-
-  <section class="back">
-    <a class="btn" href="projetos.html">Confira os projetos</a>
-  </section>
+  <nav class="case-nav" aria-label="Continuar">
+    <a class="btn" href="projetos.html">Ver os projetos<svg class="arrow" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </nav>
 </main>
 <footer id="contato">
-  <h2>Vamos tirar sua ideia do papel?</h2>
-  <a class="btn" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  <p class="ask">Tem um vídeo pra tirar do papel?</p>
+  <a class="btn dark" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Chamar no WhatsApp</a>
   <div class="foot-links">
     <a href="https://www.instagram.com/anibalecarlos/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/@anibalecarlos" target="_blank" rel="noopener">YouTube</a>
     <a href="https://www.linkedin.com/in/carlosanibale" target="_blank" rel="noopener">LinkedIn</a>
-    <span>Carlos Anibale, 2026</span>
+    <span>Maringá, PR · 2026</span>
   </div>
+  <p class="bigname" aria-hidden="true">Carlos Anibale</p>
 </footer>
-<script src="assets/preloader.js" defer></script>
-<script src="assets/main.js" defer></script>
+
+<script src="assets/site.js?v=20261124" defer></script>
 </body>
 </html>

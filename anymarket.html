@@ -5,98 +5,113 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anymarket — Carlos Anibale</title>
-<meta name="description" content="Vídeos institucionais, de YouTube e de mídia paga produzidos para o Anymarket, hub do DB1 Group para gestão de vendas em marketplaces.">
+<title>Anymarket · Carlos Anibale</title>
+<meta name="description" content="Vídeos institucionais, para YouTube e mídia paga produzidos para o Anymarket, hub de marketplaces do DB1 Group.">
+<link rel="alternate" hreflang="pt-BR" href="anymarket.html">
+<link rel="alternate" hreflang="en" href="en/anymarket.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261018">
-<script>try{if(!sessionStorage.getItem("pl-seen")){document.documentElement.classList.add("pl-on");setTimeout(function(){document.documentElement.classList.remove("pl-on")},9500)}}catch(e){}</script>
+<link rel="stylesheet" href="assets/site.css?v=20261124">
+<script>try{if(!sessionStorage.getItem("intro-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-on")}catch(e){}</script>
 </head>
 <body>
-<div class="preloader" aria-hidden="true"><div class="pl-fill"></div><div class="pl-count"><span class="pl-num">0</span><span class="pl-pct">%</span></div></div>
 
-<header>
+<!-- ABERTURA ANIMADA: a mesma da home, uma vez por sessão -->
+<div class="intro-screen" aria-hidden="true">
+  <div class="lockup">
+    <svg class="roll" viewBox="0 0 501 501" width="72" height="72"><g fill="currentColor"><path d="M125.039 33.5417C5.4711 102.575 -35.4997 255.48 33.5331 375.048C102.566 494.616 255.471 535.587 375.039 466.554C494.608 397.522 535.579 244.616 466.546 125.048C397.536 5.46659 244.631 -35.5042 125.039 33.5417ZM433.251 144.271C491.671 245.456 457.002 374.84 355.817 433.26C254.631 491.679 125.247 457.011 66.8277 355.825C8.43106 254.627 43.0898 125.279 144.275 66.8592C245.461 8.43972 374.845 43.1081 433.264 144.294L433.251 144.271Z"/><path d="M140.253 357.857C188.258 406.778 264.948 419.104 327.038 383.256C389.129 347.408 416.799 274.83 398.435 208.795C395.031 196.572 390.045 184.561 383.401 173.052L116.815 326.965C123.46 338.474 131.356 348.774 140.253 357.857ZM355.412 233.634C367.67 277.649 349.204 326.035 307.802 349.938C266.401 373.841 215.274 365.604 183.276 333.017L355.412 233.634Z"/><path d="M221.18 222.317L87.7977 186.578L77.847 223.714L121.539 235.422L78.3568 260.353L97.5927 293.67L221.18 222.317Z"/><path d="M313.467 87.679L276.33 77.7283L240.591 211.111L364.178 139.757L344.942 106.44L301.76 131.371L313.467 87.679Z"/></g></svg>
+    <span class="name">carlos anibale</span>
+  </div>
+</div>
+<header class="top">
   <a class="logo" href="index.html" aria-label="Carlos Anibale, início"><img src="assets/img/icon.svg" alt="" width="24" height="24"><span>carlos anibale</span></a>
-  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   <nav id="menu" aria-label="Principal">
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="projetos.html" aria-current="page">Projetos</a></li>
-      <li><a href="index.html#servicos">Serviços</a></li>
-      <li><a href="index.html#conteudo">Conteúdo</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="#contato" class="nav-cta">Contato</a></li>
-    </ul>
+    <a href="projetos.html" aria-current="page">Projetos</a>
+    <a href="index.html#servicos">Serviços</a>
+    <a href="index.html#conteudo">Conteúdo</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="#contato" class="nav-cta">Contato</a>
   </nav>
+  <div class="lang" role="group" aria-label="Idioma">
+    <a class="flag" href="anymarket.html" hreflang="pt-BR" lang="pt-BR" title="Português" aria-current="true"><img src="assets/img/flags/br.svg" alt="Português" width="24" height="24"></a>
+    <a class="flag" href="en/anymarket.html" hreflang="en" lang="en" title="English"><img src="assets/img/flags/us.svg" alt="English" width="24" height="24"></a>
+  </div>
+<span class="scrub" aria-hidden="true"><span></span></span>
 </header>
 <main>
-  <!-- Abertura: usa o preview da Anymarket (assets/previews/anymarket.mp4) como vídeo de fundo -->
-  <div class="hero">
-    <div class="fallback"></div>
+  <!-- ABERTURA DO PROJETO: o preview do projeto em tela quase cheia -->
+  <section class="case-hero">
     <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
       <source src="assets/previews/anymarket.mp4" type="video/mp4">
     </video>
-    <div>
-      <h1><span><i>Anymarket</i></span></h1>
-      <p class="ano">2025 - 2026</p>
-      <div class="hero-foot">
+    <div class="case-intro">
+      <h1>Anymarket</h1>
+      <div class="case-text">
+        <p class="year">2025 a 2026</p>
         <p>O Anymarket é um hub do DB1 Group que centraliza e automatiza a gestão de vendas em múltiplos marketplaces, estoque e pedidos.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <section id="institucional" class="cs">
-    <h2>Institucional</h2>
+  <section class="block split">
+    <div class="block-head">
+      <h2>Institucional</h2>
+    </div>
     <div class="vids">
       <div class="yt" data-id="q8VVnG6MZU8">
-          <button type="button" aria-label="Reproduzir vídeo">
-            <img src="https://i.ytimg.com/vi/q8VVnG6MZU8/hqdefault.jpg" alt="" loading="lazy">
-            <span class="play"></span>
-          </button>
-        </div>
+        <button type="button" aria-label="Reproduzir vídeo: Anymarket, Institucional">
+          <img src="https://i.ytimg.com/vi/q8VVnG6MZU8/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play"></span>
+        </button>
+      </div>
     </div>
   </section>
-
-  <section id="youtube" class="cs">
-    <h2>YouTube</h2>
+  <section class="block split">
+    <div class="block-head">
+      <h2>YouTube</h2>
+    </div>
     <div class="vids">
       <div class="yt" data-id="ITGF86j1U44">
-          <button type="button" aria-label="Reproduzir vídeo">
-            <img src="https://i.ytimg.com/vi/ITGF86j1U44/hqdefault.jpg" alt="" loading="lazy">
-            <span class="play"></span>
-          </button>
-        </div>
+        <button type="button" aria-label="Reproduzir vídeo: Anymarket, YouTube">
+          <img src="https://i.ytimg.com/vi/ITGF86j1U44/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play"></span>
+        </button>
+      </div>
     </div>
   </section>
-
-  <section id="midia-paga" class="cs">
-    <h2>Mídia paga</h2>
+  <section class="block split">
+    <div class="block-head">
+      <h2>Mídia paga</h2>
+    </div>
     <div class="vids">
       <div class="yt" data-id="G-BBnaMya0M">
-          <button type="button" aria-label="Reproduzir vídeo">
-            <img src="https://i.ytimg.com/vi/G-BBnaMya0M/hqdefault.jpg" alt="" loading="lazy">
-            <span class="play"></span>
-          </button>
-        </div>
+        <button type="button" aria-label="Reproduzir vídeo: Anymarket, Mídia paga">
+          <img src="https://i.ytimg.com/vi/G-BBnaMya0M/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play"></span>
+        </button>
+      </div>
     </div>
   </section>
 
-  <section class="back">
-    <a class="btn" href="projetos.html">Voltar para Projetos</a>
-  </section>
+  <nav class="case-nav" aria-label="Outros projetos">
+    <a class="btn ghost" href="projetos.html"><svg class="arrow arrow-back" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Todos os projetos</a>
+    <a class="btn" href="anytools.html">Próximo: Anytools<svg class="arrow" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </nav>
 </main>
 <footer id="contato">
-  <h2>Bora fazer!</h2>
-  <a class="btn" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  <p class="ask">Tem um vídeo pra tirar do papel?</p>
+  <a class="btn dark" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Chamar no WhatsApp</a>
   <div class="foot-links">
     <a href="https://www.instagram.com/anibalecarlos/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/@anibalecarlos" target="_blank" rel="noopener">YouTube</a>
     <a href="https://www.linkedin.com/in/carlosanibale" target="_blank" rel="noopener">LinkedIn</a>
-    <span>Carlos Anibale, 2026</span>
+    <span>Maringá, PR · 2026</span>
   </div>
+  <p class="bigname" aria-hidden="true">Carlos Anibale</p>
 </footer>
-<script src="assets/preloader.js" defer></script>
-<script src="assets/main.js" defer></script>
+
+<script src="assets/site.js?v=20261124" defer></script>
 </body>
 </html>

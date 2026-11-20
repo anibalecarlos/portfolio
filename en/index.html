@@ -12,8 +12,8 @@
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../assets/site.css?v=20261125">
-<script>try{if(!sessionStorage.getItem("intro-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-on")}catch(e){}</script>
+<link rel="stylesheet" href="../assets/site.css?v=20261129">
+<script>document.documentElement.classList.add("js");try{if(!sessionStorage.getItem("intro-seen")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-on")}catch(e){}</script>
 </head>
 <body>
 
@@ -45,48 +45,22 @@
 
 <main id="inicio">
 
-  <!-- ABERTURA: o reel ocupa a tela inteira e fica parado enquanto a apresentação
-       sobe por cima dele; depois a seção inteira segue a rolagem normal. -->
+  <!-- ABERTURA, em três tempos:
+       1. título e texto no meio da tela (descem de cima para baixo depois da abertura laranja)
+          e o reel num box pequeno logo abaixo;
+       2. ao rolar, o box do reel cresce até ocupar a tela inteira (o palco fica preso no topo);
+       3. com o reel em tela cheia, a seção solta e sobe com a rolagem normal. -->
   <section class="hero" aria-label="Introduction">
     <div class="stage">
-      <video autoplay muted loop playsinline preload="auto" aria-label="Carlos Anibale's video editing and motion design reel">
-        <source src="../assets/reel.mp4" type="video/mp4">
-      </video>
-      <div class="shade" aria-hidden="true"></div>
-      <div class="intro">
-        <h1>Hi, I'm<br>Carlos.</h1>
-        <div class="intro-text">
-          <p>Video editor and motion designer based in Maringá, Brazil. For over 10 years I've been turning footage, product screens and scripts into well-paced videos for SaaS, e-commerce and fintech.</p>
-          <a class="btn" href="https://wa.me/5544936189694" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        </div>
+      <div class="hello">
+        <h1 class="drop"><span>Hi, I'm Carlos.</span></h1>
+        <p class="drop"><span>Video editor and motion designer based in Maringá, Brazil. For over 10 years I've been turning footage, product screens and scripts into well-paced videos for SaaS, e-commerce and fintech.</span></p>
       </div>
-      <span class="cue" aria-hidden="true"></span>
-    </div>
-  </section>
-
-  <!-- CLIENTES: carrossel infinito com os logos de assets/img/logos/.
-       Todos ficam claros via CSS (filtro), então o arquivo pode vir em qualquer cor,
-       desde que tenha fundo transparente. A altura de cada um é ajustada no CSS (.lg-*).
-       O segundo grupo é cópia do primeiro, só para o loop não ter emenda. -->
-  <section class="clients" aria-label="Brands I've edited for">
-    <p>I've edited for</p>
-    <div class="marquee">
-      <ul class="track">
-        <li><img class="lg-nomad" src="../assets/img/logos/nomad.png" alt="Nomad" decoding="async"></li>
-        <li><img class="lg-aiqfome" src="../assets/img/logos/aiqfome.png" alt="aiqfome" decoding="async"></li>
-        <li><img class="lg-db1" src="../assets/img/logos/db1.webp" alt="DB1 Group" decoding="async"></li>
-        <li><img class="lg-anymarket" src="../assets/img/logos/anymarket.webp" alt="Anymarket" decoding="async"></li>
-        <li><img class="lg-husky" src="../assets/img/logos/husky.svg" alt="Husky" decoding="async"></li>
-        <li><img class="lg-anytools" src="../assets/img/logos/anytools.png" alt="Anytools" decoding="async"></li>
-      </ul>
-      <ul class="track" aria-hidden="true">
-        <li><img class="lg-nomad" src="../assets/img/logos/nomad.png" alt="" decoding="async"></li>
-        <li><img class="lg-aiqfome" src="../assets/img/logos/aiqfome.png" alt="" decoding="async"></li>
-        <li><img class="lg-db1" src="../assets/img/logos/db1.webp" alt="" decoding="async"></li>
-        <li><img class="lg-anymarket" src="../assets/img/logos/anymarket.webp" alt="" decoding="async"></li>
-        <li><img class="lg-husky" src="../assets/img/logos/husky.svg" alt="" decoding="async"></li>
-        <li><img class="lg-anytools" src="../assets/img/logos/anytools.png" alt="" decoding="async"></li>
-      </ul>
+      <div class="reel">
+        <video autoplay muted loop playsinline preload="auto" aria-label="Carlos Anibale's video editing and motion design reel">
+          <source src="../assets/reel.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </section>
 
@@ -120,6 +94,17 @@
       </a>
     </div>
     <p class="work-foot"><a class="btn" href="projetos.html">See all projects<svg class="arrow" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" aria-labelledby="about-t">
+    <img src="../assets/img/carlos-sobre.webp" alt="Photo of Carlos Anibale" width="460" height="460" loading="lazy">
+    <div>
+      <h2 id="about-t">Carlos Anibale</h2>
+      <p>I have a degree in Journalism and have worked with editing, motion graphics and 2D animation for over 10 years, always on content for digital products and social media.</p>
+      <p>My everyday tools are After Effects, Premiere Pro, Illustrator, Photoshop, Audition and Figma.</p>
+      <a class="more" href="sobre.html">See experience and education</a>
+    </div>
   </section>
 
   <!-- SERVIÇOS: gavetas; a descrição só aparece ao clicar no título.
@@ -160,17 +145,6 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section class="about" aria-labelledby="about-t">
-    <img src="../assets/img/carlos-sobre.webp" alt="Photo of Carlos Anibale" width="460" height="460" loading="lazy">
-    <div>
-      <h2 id="about-t">Carlos Anibale</h2>
-      <p class="lead">Editing grounded in communication and design.</p>
-      <p>I have a degree in Journalism and have worked with editing, motion graphics and 2D animation for over 10 years, always on content for digital products and social media.</p>
-      <p>My everyday tools are After Effects, Premiere Pro, Illustrator, Photoshop, Audition and Figma.</p>
-      <a class="more" href="sobre.html">See experience and education</a>
-    </div>
-  </section>
 </main>
 
 <footer id="contato">
@@ -185,6 +159,6 @@
   <p class="bigname" aria-hidden="true">Carlos Anibale</p>
 </footer>
 
-<script src="../assets/site.js?v=20261124" defer></script>
+<script src="../assets/site.js?v=20261128" defer></script>
 </body>
 </html>

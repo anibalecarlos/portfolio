@@ -1,10 +1,10 @@
 /* ==========================================================
    Carlos Anibale, site v13 (estilo único para todas as páginas)
-   Roboto Condensed 900 nos títulos, Work Sans no texto.
+   DM Sans 900 nos títulos, Work Sans no texto.
    Cores: ink #110702, creme #FFF4EE, laranja #FF4802.
    Primeiro a home; no fim, os componentes das páginas internas.
    ========================================================== */
-@font-face{font-family:"Roboto Condensed Titulos";src:url("fonts/RobotoCondensed.ttf") format("truetype");font-weight:100 900;font-display:swap}
+@font-face{font-family:"DM Sans";src:url("fonts/DMSans.ttf") format("truetype");font-weight:100 1000;font-style:normal;font-display:swap}
 @font-face{font-family:"Work Sans";src:url("fonts/WorkSans.ttf") format("truetype");font-weight:100 900;font-style:normal;font-display:swap}
 
 :root{
@@ -17,7 +17,7 @@
   --line:rgba(255,244,238,.14);
   --orange:#FF4802;   /* títulos de destaque, cursor, ações */
 
-  --title:"Roboto Condensed Titulos","Roboto Condensed","Arial Narrow",sans-serif;
+  --title:"DM Sans",system-ui,sans-serif;
   --body:"Work Sans",system-ui,sans-serif;
 
   /* escala: 120 / 64 / 32 / 18 / 14 (no desktop) */
@@ -187,7 +187,7 @@ footer{background:var(--orange);color:var(--ink);padding:var(--s4) var(--gutter)
 .foot-links{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:var(--s3);font-size:15px;font-weight:500}
 .foot-links a:hover{text-decoration:underline}
 .foot-links span{margin-left:auto}
-.bigname{font-size:min(calc((100vw - 2 * var(--pad) - 16px) / 5.95),220px);line-height:.8;white-space:nowrap;margin:var(--s2) 0 -.06em;letter-spacing:0}
+.bigname{font-size:min(calc((100vw - 2 * var(--pad) - 16px) / 6.35),208px);line-height:.8;white-space:nowrap;margin:var(--s2) 0 -.06em;letter-spacing:-.03em}
 footer :focus-visible{outline-color:var(--ink)}
 
 /* ---------- celular e tablet ---------- */
@@ -330,3 +330,5 @@ footer :focus-visible{outline-color:var(--ink)}
   .lang{order:2}
   .menu-btn{order:3}
 }
+/* títulos com linhas equilibradas (evita uma palavra sozinha na última linha) */
+h1,h2,h3,.ask,.lead,.lockup .name{text-wrap:balance}
